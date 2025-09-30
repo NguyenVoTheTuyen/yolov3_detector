@@ -18,7 +18,15 @@
 Bạn cần cài đặt Python (phiên bản 3.6 trở lên) và các thư viện sau:
 
 ```bash
-pip install opencv-python numpy
+conda create -n yolo python=3.10 -y
+conda activate yolo
+pip install -r requirements.txt
+
+wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov3.weights -O yolov3.weights
+wget https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg
+wget https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names
+
+
 ```
 
 #### 2. Tải File Mô Hình (Assets)
