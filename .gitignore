@@ -1,0 +1,8 @@
+*__pycache__
+venv/
+.env
+volumes/
+.DS_Store
+yolov3.weights
+yolov3.cfg
+coco.names
